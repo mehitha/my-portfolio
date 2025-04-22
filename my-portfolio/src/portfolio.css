@@ -1,0 +1,114 @@
+/* Portfolio.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Small Navbar */
+.small-navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 20px; /* Reduced the padding for smaller height */
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-name {
+  font-size: 18px; /* Smaller font size */
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.navbar-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-left li {
+  display: inline;
+  margin-right: 15px; /* Reduced margin */
+}
+
+.navbar-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* Smaller font size */
+  transition: color 0.3s ease;
+}
+
+.navbar-left a:hover {
+  color: #ffcc00;
+}
+
+/* Section Styles */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Education Section */
+#education {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 50px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+#education h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#education p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #ffcc00;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-left ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
