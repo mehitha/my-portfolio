@@ -63,7 +63,7 @@
 .hamburger {
   display: none;
   font-size: 30px;
-  cursor: pointer;
+  cursor: help;
 }
 
 /* Mobile responsiveness */
@@ -75,17 +75,49 @@
     position: absolute;
     top: 70px; /* Adjust position below navbar */
     right: 0;
-    background-color: #282c34;
+    background-color: #0b1c3e92;
     width: 100%;
     padding: 20px;
     z-index: 999;
+    color: #282c34;
   }
 
   .nav-links.active {
-    display: flex; /* Show the menu when active */
-  }
+    display: flex;
+    margin: -20px;
+    margin-top: 5px;
+    text-align: center;
+    /* padding: 5px; */
+    /* padding-left: 10px; */
+  
+ 
+   
+   }
 
   .hamburger {
     display: block; /* Show hamburger on mobile */
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-links ul li a:hover {
+  color: #3498db;
+}
+
