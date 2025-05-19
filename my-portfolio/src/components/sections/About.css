@@ -1,4 +1,4 @@
-.about {
+/* .about {
   text-align: center;
   padding: 40px 20px;
   background-color: #ffffff;
@@ -48,7 +48,7 @@
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 0; /* No frame */
+  border-radius: 0;
   border: none;
   box-shadow: none;
 }
@@ -65,15 +65,9 @@
   margin-bottom: 12px;
 }
 
-/* ===========================
-   RESPONSIVE STYLES
-=========================== */
 
 @media (max-width: 992px) {
-  /* .about-card {
-    flex-direction: column;
-    text-align: center;
-  } */
+ 
 
   .about-text {
     text-align: center;
@@ -103,4 +97,240 @@
     width: 130px;
     height: 130px;
   }
+} */
+
+
+
+/* About.css */
+
+:root {
+  --main-color: #00b16a;
+  --bg-color: #111;
+  --text-color: #fff;
+  --light-text: #ccc;
+  --card-bg: #1a1a1a;
+  --highlight: #00b16a;
 }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.about-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  flex-wrap: wrap;
+  background-color: var(--bg-color);
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: var(--light-text);
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin: 0.5rem 0;
+}
+
+.hero-text .highlight {
+  color: var(--highlight);
+}
+
+.hero-text p {
+  color: var(--light-text);
+  font-size: 1.1rem;
+}
+
+.contact-btn {
+  margin: 1.5rem 0;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: 0.3s;
+  
+}
+
+.contact-btn:hover {
+  background-color: #00995a;
+}
+
+.info-blocks {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  color: var(--light-text);
+}
+
+.info-blocks div span {
+  display: block;
+  color: var(--text-color);
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  text-align: right;
+  --bg-color: #111;
+}
+
+.hero-image img {
+  max-width:60%;
+  max-height:60%;
+  
+
+  border-radius: 10px;
+  filter: grayscale(100%);
+ 
+ 
+
+ 
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 8%;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.about-image {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.about-image img {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 10px;
+ 
+}
+
+.about-text {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.about-text .section-intro {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: var(--light-text);
+  line-height: 1.6;
+}
+
+.personal-info {
+  margin-top: 1rem;
+  color: var(--light-text);
+}
+
+.download-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #00995a;
+}
+
+/* Services Section */
+.services-section {
+  padding: 4rem 8%;
+  background-color: var(--bg-color);
+}
+
+.services-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  border: 1px solid transparent;
+}
+
+.service-card:hover {
+  border-color: var(--main-color);
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-section, .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .about-text {
+    padding: 0;
+  }
+
+  .about-text {
+    padding-top: 1rem;
+  }
+
+  .info-blocks {
+    justify-content: center;
+  }
+
+  .hero-image {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+
+
+

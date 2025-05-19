@@ -1,4 +1,4 @@
-.contact {
+/* .contact {
     text-align: center;
     padding-top: 75px;
   }
@@ -45,4 +45,108 @@
   .contact-form button:hover {
     background-color: #21a1f1;
   }
-  
+   */
+
+
+
+
+
+   /* Contacts.css */
+
+:root {
+  --main-color: #00b16a;
+  --bg-color: #111;
+  --text-color: #fff;
+  --light-text: #ccc;
+  --card-bg: #1a1a1a;
+  --input-bg: #222;
+}
+
+.contact {
+  padding: 4rem 8%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.social-links {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: var(--light-text);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: var(--input-bg);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+
+.contact-form button {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #01985a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 3rem 5%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+  }
+}
