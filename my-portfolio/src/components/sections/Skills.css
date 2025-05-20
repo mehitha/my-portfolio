@@ -1,7 +1,4 @@
-.skills {
-    text-align: center;
-    padding-top: 75px;
-  }
+
   
   .skill-logos {
     display: flex;
@@ -22,6 +19,30 @@
     width: 60px;
     height: 60px;
     object-fit: contain;
+  }
+  
+  
+
+
+   :root {
+    --main-color: #00b16a;
+    --bg-color: #111;
+    --text-color: #fff;
+    --light-text: #ccc;
+    --card-bg: #1a1a1a;
+  }
+  
+  .skills {
+    padding: 4rem 8%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
   }
   
   
